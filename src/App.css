@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.data-table > div:first-child {
+  width: 100% !important;
+}
+
+.data-table > div:first-child > .MuiDataGrid-root {
+  width: 100% !important;
+}

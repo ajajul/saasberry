@@ -131,16 +131,19 @@ function App() {
             </p>
           }
         >
-          <DataGrid
-            paginationMode={'server'}
-            autoHeight={true}
-            hideFooterPagination={true}
-            rows={data}
-            columns={columns}
-          />
+          <div className="data-table">
+            <DataGrid
+              paginationMode={'server'}
+              autoHeight={true}
+              hideFooterPagination={true}
+              rows={data}
+              columns={columns}
+              disableSelectionOnClick
+            />
+          </div>
         </InfiniteScroll>
       </div>
-     
+
     </div>
   );
 }
